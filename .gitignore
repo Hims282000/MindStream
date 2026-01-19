@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Frontend build
+/Frontend/mindstream/build
+/Frontend/mindstream/dist
+/Frontend/mindstream/.next
+
+# Backend build
+Backend/mindStreamApplication/target/
+Backend/mindStreamApplication/bin/
+Backend/mindStreamApplication/.gradle/
+Backend/mindStreamApplication/build/
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# OS
+Thumbs.db
+.DS_Store
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Maven
+.m2/
+
+# Java
+*.class
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
