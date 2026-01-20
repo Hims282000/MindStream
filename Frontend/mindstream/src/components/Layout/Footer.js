@@ -182,7 +182,7 @@ const Footer = () => {
               <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                 <EmailIcon fontSize="small" />
                 <Typography variant="body2" sx={{ opacity: 0.8 }}>
-                  support@mindstream.com
+                  iamhims738@gmail.com
                 </Typography>
               </Box>
               <Typography variant="body2" sx={{ opacity: 0.8 }}>

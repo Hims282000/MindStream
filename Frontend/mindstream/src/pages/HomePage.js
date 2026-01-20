@@ -205,15 +205,15 @@ const HomePage = () => {
                   alignItems: 'flex-start',
                   p: 4,
                   animationDelay: feature.delay,
-                  background: 'rgba(255,255,255,0.7)',
+                  bgcolor: 'background.paper',
                   backdropFilter: 'blur(20px)',
-                  border: '1px solid rgba(255,255,255,0.8)'
+                  border: '1px solid rgba(0,0,0,0.1)'
                 }}
               >
                 <AvatarWrapper color={feature.color}>
                   {feature.icon}
                 </AvatarWrapper>
-                <Typography variant="h5" component="h3" gutterBottom sx={{ mt: 3, fontWeight: 700 }}>
+                <Typography variant="h5" component="h3" gutterBottom sx={{ mt: 3, fontWeight: 700, color: 'text.primary' }}>
                   {feature.title}
                 </Typography>
                 <Typography variant="body1" color="text.secondary" sx={{ lineHeight: 1.7 }}>
@@ -319,9 +319,9 @@ const HomePage = () => {
       </Box>
 
 
-      <Box sx={{ py: 12, bgcolor: '#f8fafc', textAlign: 'center' }}>
+      <Box sx={{ py: 12, bgcolor: 'background.paper', textAlign: 'center' }}>
          <Container maxWidth="md">
-            <Typography variant="h3" gutterBottom sx={{ fontWeight: 800 }}>
+            <Typography variant="h3" gutterBottom sx={{ fontWeight: 800, color: 'text.primary' }}>
               Ready to start your collection?
             </Typography>
             <Typography variant="h6" color="text.secondary" sx={{ mb: 4, fontWeight: 400 }}>

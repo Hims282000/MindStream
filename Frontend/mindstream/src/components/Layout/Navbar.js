@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import {
   AppBar,
@@ -13,8 +13,7 @@ import {
   InputBase,
   alpha,
   styled,
-  Tooltip,
-  useTheme
+  Tooltip
 } from '@mui/material';
 import {
   Search as SearchIcon,
@@ -25,19 +24,16 @@ import {
   Login as LoginIcon,
   Logout as LogoutIcon,
   Menu as MenuIcon,
-  MusicNote as MusicNoteIcon,
-  Brightness4 as Brightness4Icon,
-  Brightness7 as Brightness7Icon
+  MusicNote as MusicNoteIcon
 } from '@mui/icons-material';
 import { useAuth } from '../../context/AuthContext';
-import { ColorModeContext } from '../../App';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
   borderRadius: theme.shape.borderRadius,
-  backgroundColor: alpha(theme.palette.mode === 'light' ? theme.palette.common.white : theme.palette.common.black, 0.15),
+  backgroundColor: 'rgba(0,0,0,0.04)',
   '&:hover': {
-    backgroundColor: alpha(theme.palette.mode === 'light' ? theme.palette.common.white : theme.palette.common.black, 0.25),
+    backgroundColor: 'rgba(0,0,0,0.08)',
   },
   marginRight: theme.spacing(2),
   marginLeft: 0,
@@ -59,28 +55,28 @@ const SearchIconWrapper = styled('div')(({ theme }) => ({
 }));
 
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
-  color: theme.palette.mode === 'light' ? '#1e293b' : '#ffffff',
+  color: '#1e293b',
   width: '100%',
   '& .MuiInputBase-input': {
     padding: theme.spacing(1, 1, 1, 0),
     paddingLeft: `calc(1em + ${theme.spacing(4)})`,
     transition: theme.transitions.create('width'),
     width: '100%',
-    color: theme.palette.mode === 'light' ? '#1e293b !important' : '#ffffff !important',
+    color: '#1e293b',
     '&::-webkit-input-placeholder': {
-      color: theme.palette.mode === 'light' ? '#64748b' : '#e2e8f0',
+      color: '#64748b',
       opacity: 1,
     },
     '&::-moz-placeholder': {
-      color: theme.palette.mode === 'light' ? '#64748b' : '#e2e8f0',
+      color: '#64748b',
       opacity: 1,
     },
     '&:-ms-input-placeholder': {
-      color: theme.palette.mode === 'light' ? '#64748b' : '#e2e8f0',
+      color: '#64748b',
       opacity: 1,
     },
     '&::placeholder': {
-      color: theme.palette.mode === 'light' ? '#64748b' : '#e2e8f0',
+      color: '#64748b',
       opacity: 1,
     },
     [theme.breakpoints.up('md')]: {
@@ -92,8 +88,6 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 const Navbar = () => {
   const { user, logout, isAuthenticated } = useAuth();
   const navigate = useNavigate();
-  const theme = useTheme();
-  const colorMode = useContext(ColorModeContext);
   const [anchorEl, setAnchorEl] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -234,7 +228,7 @@ const Navbar = () => {
           </Box>
 
 
-          <Search sx={{ backgroundColor: alpha(theme.palette.mode === 'light' ? 'rgba(0,0,0,0.04)' : 'rgba(255,255,255,0.05)', 1), '&:hover': { backgroundColor: alpha(theme.palette.mode === 'light' ? 'rgba(0,0,0,0.08)' : 'rgba(255,255,255,0.1)', 1) } }}>
+          <Search>
             <SearchIconWrapper>
               <SearchIcon color="action" />
             </SearchIconWrapper>
@@ -246,10 +240,6 @@ const Navbar = () => {
               onKeyPress={handleSearch}
             />
           </Search>
-
-          <IconButton sx={{ ml: 1 }} onClick={colorMode.toggleColorMode} color="inherit">
-            {theme.palette.mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon sx={{ color: 'text.secondary' }} />}
-          </IconButton>
 
 
           <Box sx={{ flexGrow: 0, display: 'flex', alignItems: 'center', gap: 1, ml: 1 }}>
