@@ -130,7 +130,7 @@ const AlbumDetailPage = () => {
     if (navigator.share) {
       navigator.share({
         title: album.album,
-        text: `Check out ${album.album} by The White Stripes`,
+        text: `Check out ${album.album} on MindStream`,
         url: window.location.href,
       });
     } else {
@@ -265,7 +265,7 @@ const AlbumDetailPage = () => {
                   {album.album}
                 </Typography>
                 <Typography variant="h5" color="text.secondary">
-                  The White Stripes
+                  MindStream Collection
                 </Typography>
               </Box>
 
@@ -447,13 +447,13 @@ const AlbumDetailPage = () => {
           <Grid item xs={12} md={6}>
             <Typography variant="body1" paragraph>
               Released in {album.year}, "{album.album}" represents an important 
-              chapter in The White Stripes' discography. With a peak chart position 
+              chapter in MindStream's discography. With a peak chart position 
               of #{album.chartPosition === '-' ? 'N/A' : album.chartPosition} on 
               the US charts, this album showcases the band's distinctive sound and 
               musical evolution.
             </Typography>
             <Typography variant="body1" paragraph>
-              The White Stripes, known for their raw blues-influenced garage rock, 
+              MindStream, known for its curated collection of albums, 
               consistently pushed musical boundaries throughout their career. Each 
               album tells a unique story of artistic growth and creative expression.
             </Typography>

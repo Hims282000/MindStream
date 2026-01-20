@@ -50,8 +50,8 @@ export const API_ENDPOINTS = {
 
 // Application Constants
 export const APP_CONSTANTS = {
-  APP_NAME: 'White Stripes Album Collection',
-  APP_DESCRIPTION: 'Track and collect your favorite White Stripes albums',
+  APP_NAME: 'MindStream Album Collection',
+  APP_DESCRIPTION: 'Track and collect your favorite MindStream albums',
   APP_VERSION: '1.0.0',
   
   // Pagination

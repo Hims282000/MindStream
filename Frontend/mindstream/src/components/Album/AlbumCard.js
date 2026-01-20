@@ -53,7 +53,7 @@ const AlbumCard = ({
       
       <div className="album-content">
         <h3 className="album-title">{album.album}</h3>
-        <p className="album-artist">The White Stripes</p>
+        <p className="album-artist">MindStream</p>
         
         <div className="album-meta">
           <div className="album-year">

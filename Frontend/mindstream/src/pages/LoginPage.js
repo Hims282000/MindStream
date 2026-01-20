@@ -71,7 +71,7 @@ const LoginPage = () => {
           Welcome Back
         </Typography>
         <Typography variant="body1" color="text.secondary">
-          Sign in to your White Stripes collection
+          Sign in to your MindStream collection
         </Typography>
       </Box>
 

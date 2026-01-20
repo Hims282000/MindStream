@@ -249,7 +249,7 @@ const RegisterPage = () => {
             </Typography>
             <Box textAlign="left" sx={{ mb: 3 }}>
               <Typography variant="body2" color="text.secondary">
-                • Browse White Stripes albums
+                • Browse MindStream albums
               </Typography>
               <Typography variant="body2" color="text.secondary">
                 • Save your favorite albums
@@ -284,7 +284,7 @@ const RegisterPage = () => {
           Join the Collection
         </Typography>
         <Typography variant="body1" color="text.secondary">
-          Create your White Stripes album collection account
+          Create your MindStream album collection account
         </Typography>
       </Box>
 

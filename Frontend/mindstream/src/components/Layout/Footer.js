@@ -39,11 +39,11 @@ const Footer = () => {
             <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
               <MusicNoteIcon sx={{ mr: 1, color: '#e53935' }} />
               <Typography variant="h6" component="div">
-                WHITE STRIPES
+                MINDSTREAM
               </Typography>
             </Box>
             <Typography variant="body2" sx={{ mb: 2, opacity: 0.8 }}>
-              The ultimate collection for White Stripes fans. 
+              The ultimate collection for MindStream fans. 
               Track albums, chart positions, and build your personal collection.
             </Typography>
             <Stack direction="row" spacing={1}>
@@ -161,12 +161,12 @@ const Footer = () => {
               <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                 <EmailIcon fontSize="small" />
                 <Typography variant="body2" sx={{ opacity: 0.8 }}>
-                  support@whitestripes.com
+                  support@mindstream.com
                 </Typography>
               </Box>
               <Typography variant="body2" sx={{ opacity: 0.8 }}>
                 Made with <FavoriteIcon fontSize="small" sx={{ color: '#e53935', verticalAlign: 'middle', mx: 0.5 }} /> 
-                for White Stripes fans
+                for MindStream fans
               </Typography>
             </Stack>
           </Grid>
@@ -176,10 +176,10 @@ const Footer = () => {
 
         <Box sx={{ display: 'flex', flexDirection: { xs: 'column', sm: 'row' }, justifyContent: 'space-between', alignItems: 'center' }}>
           <Typography variant="body2" sx={{ opacity: 0.6, mb: { xs: 2, sm: 0 } }}>
-            © {currentYear} White Stripes Collection. All rights reserved.
+            © {currentYear} MindStream Collection. All rights reserved.
           </Typography>
           <Typography variant="body2" sx={{ opacity: 0.6 }}>
-            This site is not affiliated with The White Stripes. Created for educational purposes.
+            This is a MindStream project. Created for educational purposes.
           </Typography>
         </Box>
       </Container>

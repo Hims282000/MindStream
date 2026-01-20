@@ -32,7 +32,7 @@ const HomePage = () => {
   const features = [
     {
       title: 'Browse Albums',
-      description: 'Explore the complete White Stripes discography',
+      description: 'Explore the complete MindStream discography',
       icon: <AlbumIcon sx={{ fontSize: 40 }} />,
       color: '#e53935'
     },
@@ -73,7 +73,7 @@ const HomePage = () => {
         <Container maxWidth="md">
           <MusicNoteIcon sx={{ fontSize: 60, mb: 3, color: '#e53935' }} />
           <Typography variant="h1" component="h1" gutterBottom sx={{ fontWeight: 'bold' }}>
-            WHITE STRIPES ALBUM COLLECTION
+            MINDSTREAM ALBUM COLLECTION
           </Typography>
           <Typography variant="h5" component="p" gutterBottom sx={{ mb: 4, opacity: 0.9 }}>
             Explore the complete discography. Track chart positions. Save your favorites.
@@ -199,7 +199,7 @@ const HomePage = () => {
           Ready to explore?
         </Typography>
         <Typography variant="body1" color="text.secondary" sx={{ mb: 4, maxWidth: 600, mx: 'auto' }}>
-          Join thousands of fans who are tracking and collecting White Stripes albums.
+          Join thousands of fans who are tracking and collecting MindStream albums.
         </Typography>
         <Button
           component={Link}

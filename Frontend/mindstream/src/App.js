@@ -41,7 +41,7 @@ const ProtectedRoute = ({ children }) => {
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#e53935', // Red color for White Stripes theme
+      main: '#e53935', // Red color for MindStream theme
       light: '#ff6f60',
       dark: '#ab000d',
     },

@@ -201,7 +201,7 @@ const AlbumsPage = () => {
       {/* Header */}
       <Paper elevation={0} sx={{ p: 3, mb: 4, backgroundColor: 'transparent' }}>
         <Typography variant="h2" component="h1" gutterBottom sx={{ fontWeight: 'bold' }}>
-          White Stripes Albums
+          MindStream Albums
         </Typography>
         <Typography variant="h6" color="text.secondary" gutterBottom>
           Explore the complete discography ({albums.length} albums)

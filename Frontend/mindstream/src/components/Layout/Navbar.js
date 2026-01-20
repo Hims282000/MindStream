@@ -120,7 +120,7 @@ const Navbar = () => {
               }
             }}
           >
-            WHITE STRIPES
+            MINDSTREAM
           </Typography>
 
           {/* Mobile Menu Icon */}
@@ -183,7 +183,7 @@ const Navbar = () => {
               textDecoration: 'none',
             }}
           >
-            WS
+            MS
           </Typography>
 
           {/* Desktop Navigation */}

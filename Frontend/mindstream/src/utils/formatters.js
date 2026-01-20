@@ -73,7 +73,7 @@ export const formatYearRange = (startYear, endYear) => {
 };
 
 // Format album title with artist
-export const formatAlbumTitle = (album, artist = 'The White Stripes') => {
+export const formatAlbumTitle = (album, artist = 'MindStream') => {
   if (!album) return '';
   return `${album} - ${artist}`;
 };
