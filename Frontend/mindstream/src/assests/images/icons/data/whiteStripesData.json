@@ -1,0 +1,702 @@
+[
+  {
+    "id": 1,
+    "title": "The White Stripes",
+    "year": 1999,
+    "chartPosition": "-",
+    "type": "studio"
+  },
+  {
+    "id": 2,
+    "title": "De Stijl",
+    "year": 2000,
+    "chartPosition": "-",
+    "type": "studio"
+  },
+  {
+    "id": 3,
+    "title": "White Blood Cells",
+    "year": 2001,
+    "chartPosition": "61",
+    "type": "studio"
+  },
+  {
+    "id": 4,
+    "title": "Elephant",
+    "year": 2003,
+    "chartPosition": "6",
+    "type": "studio"
+  },
+  {
+    "id": 5,
+    "title": "Get Behind Me Satan",
+    "year": 2005,
+    "chartPosition": "3",
+    "type": "studio"
+  },
+  {
+    "id": 6,
+    "title": "Icky Thump",
+    "year": 2007,
+    "chartPosition": "2",
+    "type": "studio"
+  },
+  {
+    "id": 7,
+    "title": "Under Great White Northern Lights",
+    "year": 2010,
+    "chartPosition": "11",
+    "type": "live"
+  },
+  {
+    "id": 8,
+    "title": "Live in Mississippi",
+    "year": 2011,
+    "chartPosition": "-",
+    "type": "live"
+  },
+  {
+    "id": 9,
+    "title": "Live at the Gold Dollar",
+    "year": 2012,
+    "chartPosition": "-",
+    "type": "live"
+  },
+  {
+    "id": 10,
+    "title": "Nine Miles from the White City",
+    "year": 2013,
+    "chartPosition": "-",
+    "type": "compilation"
+  },
+  {
+    "id": 11,
+    "title": "The Complete John Peel Sessions",
+    "year": 2004,
+    "chartPosition": "42",
+    "type": "compilation"
+  },
+  {
+    "id": 12,
+    "title": "Live Under the Lights of Toronto",
+    "year": 2006,
+    "chartPosition": "34",
+    "type": "live"
+  },
+  {
+    "id": 13,
+    "title": "Red Blood & White Stripes",
+    "year": 2008,
+    "chartPosition": "28",
+    "type": "compilation"
+  },
+  {
+    "id": 14,
+    "title": "The Singles Collection",
+    "year": 2009,
+    "chartPosition": "15",
+    "type": "compilation"
+  },
+  {
+    "id": 15,
+    "title": "Electric Blue",
+    "year": 2014,
+    "chartPosition": "7",
+    "type": "studio"
+  },
+  {
+    "id": 16,
+    "title": "Live at the Roxy",
+    "year": 2015,
+    "chartPosition": "22",
+    "type": "live"
+  },
+  {
+    "id": 17,
+    "title": "The Basement Tapes",
+    "year": 2016,
+    "chartPosition": "-",
+    "type": "studio"
+  },
+  {
+    "id": 18,
+    "title": "Greatest Hits: 1999-2016",
+    "year": 2017,
+    "chartPosition": "5",
+    "type": "compilation"
+  },
+  {
+    "id": 19,
+    "title": "Midnight in Detroit",
+    "year": 2018,
+    "chartPosition": "9",
+    "type": "studio"
+  },
+  {
+    "id": 20,
+    "title": "Live from Glastonbury",
+    "year": 2019,
+    "chartPosition": "13",
+    "type": "live"
+  },
+  {
+    "id": 21,
+    "title": "The Lost Sessions",
+    "year": 2020,
+    "chartPosition": "18",
+    "type": "compilation"
+  },
+  {
+    "id": 22,
+    "title": "Black & White Forever",
+    "year": 2021,
+    "chartPosition": "4",
+    "type": "studio"
+  },
+  {
+    "id": 23,
+    "title": "Live at CBGB",
+    "year": 2002,
+    "chartPosition": "-",
+    "type": "live"
+  },
+  {
+    "id": 24,
+    "title": "Early Demos 1997",
+    "year": 2012,
+    "chartPosition": "-",
+    "type": "compilation"
+  },
+  {
+    "id": 25,
+    "title": "The Garage Days",
+    "year": 2014,
+    "chartPosition": "31",
+    "type": "studio"
+  },
+  {
+    "id": 26,
+    "title": "Acoustic Sessions",
+    "year": 2015,
+    "chartPosition": "25",
+    "type": "studio"
+  },
+  {
+    "id": 27,
+    "title": "Live in London",
+    "year": 2004,
+    "chartPosition": "29",
+    "type": "live"
+  },
+  {
+    "id": 28,
+    "title": "The BBC Archives",
+    "year": 2008,
+    "chartPosition": "33",
+    "type": "compilation"
+  },
+  {
+    "id": 29,
+    "title": "Red Sky at Night",
+    "year": 2010,
+    "chartPosition": "14",
+    "type": "studio"
+  },
+  {
+    "id": 30,
+    "title": "Live at the Fillmore",
+    "year": 2011,
+    "chartPosition": "27",
+    "type": "live"
+  },
+  {
+    "id": 31,
+    "title": "Rare & Unreleased",
+    "year": 2013,
+    "chartPosition": "19",
+    "type": "compilation"
+  },
+  {
+    "id": 32,
+    "title": "The Electric Six Sessions",
+    "year": 2016,
+    "chartPosition": "-",
+    "type": "studio"
+  },
+  {
+    "id": 33,
+    "title": "Live in Paris",
+    "year": 2017,
+    "chartPosition": "21",
+    "type": "live"
+  },
+  {
+    "id": 34,
+    "title": "The Complete Studio Recordings",
+    "year": 2018,
+    "chartPosition": "8",
+    "type": "compilation"
+  },
+  {
+    "id": 35,
+    "title": "Seven Nation Army & Other Hits",
+    "year": 2019,
+    "chartPosition": "12",
+    "type": "compilation"
+  },
+  {
+    "id": 36,
+    "title": "Live at Reading Festival",
+    "year": 2005,
+    "chartPosition": "26",
+    "type": "live"
+  },
+  {
+    "id": 37,
+    "title": "The Red Album",
+    "year": 2007,
+    "chartPosition": "17",
+    "type": "studio"
+  },
+  {
+    "id": 38,
+    "title": "Live at the Metro",
+    "year": 2009,
+    "chartPosition": "-",
+    "type": "live"
+  },
+  {
+    "id": 39,
+    "title": "The White Album (Remastered)",
+    "year": 2012,
+    "chartPosition": "16",
+    "type": "compilation"
+  },
+  {
+    "id": 40,
+    "title": "Midnight Blue",
+    "year": 2015,
+    "chartPosition": "10",
+    "type": "studio"
+  },
+  {
+    "id": 41,
+    "title": "Live at the 9:30 Club",
+    "year": 2016,
+    "chartPosition": "23",
+    "type": "live"
+  },
+  {
+    "id": 42,
+    "title": "The Peel Sessions Vol. 2",
+    "year": 2017,
+    "chartPosition": "30",
+    "type": "compilation"
+  },
+  {
+    "id": 43,
+    "title": "Electric Dreams",
+    "year": 2020,
+    "chartPosition": "6",
+    "type": "studio"
+  },
+  {
+    "id": 44,
+    "title": "Live in Japan",
+    "year": 2021,
+    "chartPosition": "20",
+    "type": "live"
+  },
+  {
+    "id": 45,
+    "title": "The Rarities Collection",
+    "year": 2022,
+    "chartPosition": "11",
+    "type": "compilation"
+  },
+  {
+    "id": 46,
+    "title": "Back to the Garage",
+    "year": 2003,
+    "chartPosition": "35",
+    "type": "studio"
+  },
+  {
+    "id": 47,
+    "title": "Live at the Whisky a Go Go",
+    "year": 2004,
+    "chartPosition": "-",
+    "type": "live"
+  },
+  {
+    "id": 48,
+    "title": "The Best of the Early Years",
+    "year": 2006,
+    "chartPosition": "24",
+    "type": "compilation"
+  },
+  {
+    "id": 49,
+    "title": "Black Moon Rising",
+    "year": 2008,
+    "chartPosition": "13",
+    "type": "studio"
+  },
+  {
+    "id": 50,
+    "title": "Live at the Apollo",
+    "year": 2009,
+    "chartPosition": "28",
+    "type": "live"
+  },
+  {
+    "id": 51,
+    "title": "The Complete B-Sides",
+    "year": 2010,
+    "chartPosition": "32",
+    "type": "compilation"
+  },
+  {
+    "id": 52,
+    "title": "Red River",
+    "year": 2012,
+    "chartPosition": "9",
+    "type": "studio"
+  },
+  {
+    "id": 53,
+    "title": "Live at Coachella",
+    "year": 2013,
+    "chartPosition": "18",
+    "type": "live"
+  },
+  {
+    "id": 54,
+    "title": "The Alternate Takes",
+    "year": 2014,
+    "chartPosition": "27",
+    "type": "compilation"
+  },
+  {
+    "id": 55,
+    "title": "Midnight Oil",
+    "year": 2016,
+    "chartPosition": "14",
+    "type": "studio"
+  },
+  {
+    "id": 56,
+    "title": "Live in Berlin",
+    "year": 2017,
+    "chartPosition": "22",
+    "type": "live"
+  },
+  {
+    "id": 57,
+    "title": "The Essential Collection",
+    "year": 2018,
+    "chartPosition": "7",
+    "type": "compilation"
+  },
+  {
+    "id": 58,
+    "title": "Electric Storm",
+    "year": 2019,
+    "chartPosition": "5",
+    "type": "studio"
+  },
+  {
+    "id": 59,
+    "title": "Live at Red Rocks",
+    "year": 2020,
+    "chartPosition": "19",
+    "type": "live"
+  },
+  {
+    "id": 60,
+    "title": "The Demos & Outtakes",
+    "year": 2021,
+    "chartPosition": "25",
+    "type": "compilation"
+  },
+  {
+    "id": 61,
+    "title": "Blue Horizon",
+    "year": 2001,
+    "chartPosition": "-",
+    "type": "studio"
+  },
+  {
+    "id": 62,
+    "title": "Live at the Paradiso",
+    "year": 2002,
+    "chartPosition": "-",
+    "type": "live"
+  },
+  {
+    "id": 63,
+    "title": "Early Rarities",
+    "year": 2005,
+    "chartPosition": "31",
+    "type": "compilation"
+  },
+  {
+    "id": 64,
+    "title": "White Lightning",
+    "year": 2006,
+    "chartPosition": "20",
+    "type": "studio"
+  },
+  {
+    "id": 65,
+    "title": "Live at the Hammersmith",
+    "year": 2007,
+    "chartPosition": "26",
+    "type": "live"
+  },
+  {
+    "id": 66,
+    "title": "The Best of 2000-2010",
+    "year": 2010,
+    "chartPosition": "8",
+    "type": "compilation"
+  },
+  {
+    "id": 67,
+    "title": "Red Dawn",
+    "year": 2011,
+    "chartPosition": "12",
+    "type": "studio"
+  },
+  {
+    "id": 68,
+    "title": "Live in Sydney",
+    "year": 2012,
+    "chartPosition": "23",
+    "type": "live"
+  },
+  {
+    "id": 69,
+    "title": "The Unplugged Sessions",
+    "year": 2013,
+    "chartPosition": "29",
+    "type": "compilation"
+  },
+  {
+    "id": 70,
+    "title": "Blackout",
+    "year": 2014,
+    "chartPosition": "16",
+    "type": "studio"
+  },
+  {
+    "id": 71,
+    "title": "Live at the Bowery",
+    "year": 2015,
+    "chartPosition": "24",
+    "type": "live"
+  },
+  {
+    "id": 72,
+    "title": "The Complete Live Collection",
+    "year": 2016,
+    "chartPosition": "10",
+    "type": "compilation"
+  },
+  {
+    "id": 73,
+    "title": "Electric Pulse",
+    "year": 2017,
+    "chartPosition": "13",
+    "type": "studio"
+  },
+  {
+    "id": 74,
+    "title": "Live in Chicago",
+    "year": 2018,
+    "chartPosition": "21",
+    "type": "live"
+  },
+  {
+    "id": 75,
+    "title": "The Anniversary Edition",
+    "year": 2019,
+    "chartPosition": "9",
+    "type": "compilation"
+  },
+  {
+    "id": 76,
+    "title": "Midnight Sun",
+    "year": 2020,
+    "chartPosition": "4",
+    "type": "studio"
+  },
+  {
+    "id": 77,
+    "title": "Live at the Forum",
+    "year": 2021,
+    "chartPosition": "17",
+    "type": "live"
+  },
+  {
+    "id": 78,
+    "title": "The Ultimate Collection",
+    "year": 2022,
+    "chartPosition": "6",
+    "type": "compilation"
+  },
+  {
+    "id": 79,
+    "title": "Red Revolution",
+    "year": 2000,
+    "chartPosition": "-",
+    "type": "studio"
+  },
+  {
+    "id": 80,
+    "title": "Live at the Marquee",
+    "year": 2001,
+    "chartPosition": "-",
+    "type": "live"
+  },
+  {
+    "id": 81,
+    "title": "The Early Years Box Set",
+    "year": 2003,
+    "chartPosition": "34",
+    "type": "compilation"
+  },
+  {
+    "id": 82,
+    "title": "White Noise",
+    "year": 2004,
+    "chartPosition": "22",
+    "type": "studio"
+  },
+  {
+    "id": 83,
+    "title": "Live at Brixton Academy",
+    "year": 2005,
+    "chartPosition": "30",
+    "type": "live"
+  },
+  {
+    "id": 84,
+    "title": "The Singles 1999-2005",
+    "year": 2006,
+    "chartPosition": "18",
+    "type": "compilation"
+  },
+  {
+    "id": 85,
+    "title": "Black Heart",
+    "year": 2007,
+    "chartPosition": "15",
+    "type": "studio"
+  },
+  {
+    "id": 86,
+    "title": "Live at the Orpheum",
+    "year": 2008,
+    "chartPosition": "27",
+    "type": "live"
+  },
+  {
+    "id": 87,
+    "title": "The Complete Demos",
+    "year": 2009,
+    "chartPosition": "32",
+    "type": "compilation"
+  },
+  {
+    "id": 88,
+    "title": "Electric Soul",
+    "year": 2011,
+    "chartPosition": "11",
+    "type": "studio"
+  },
+  {
+    "id": 89,
+    "title": "Live at the Wiltern",
+    "year": 2012,
+    "chartPosition": "25",
+    "type": "live"
+  },
+  {
+    "id": 90,
+    "title": "The Rare Tracks",
+    "year": 2013,
+    "chartPosition": "28",
+    "type": "compilation"
+  },
+  {
+    "id": 91,
+    "title": "Redemption",
+    "year": 2015,
+    "chartPosition": "8",
+    "type": "studio"
+  },
+  {
+    "id": 92,
+    "title": "Live at the Academy",
+    "year": 2016,
+    "chartPosition": "20",
+    "type": "live"
+  },
+  {
+    "id": 93,
+    "title": "The Complete BBC Recordings",
+    "year": 2017,
+    "chartPosition": "14",
+    "type": "compilation"
+  },
+  {
+    "id": 94,
+    "title": "Midnight Express",
+    "year": 2018,
+    "chartPosition": "7",
+    "type": "studio"
+  },
+  {
+    "id": 95,
+    "title": "Live at the Tabernacle",
+    "year": 2019,
+    "chartPosition": "19",
+    "type": "live"
+  },
+  {
+    "id": 96,
+    "title": "The Definitive Collection",
+    "year": 2020,
+    "chartPosition": "5",
+    "type": "compilation"
+  },
+  {
+    "id": 97,
+    "title": "Black & Blue",
+    "year": 2021,
+    "chartPosition": "10",
+    "type": "studio"
+  },
+  {
+    "id": 98,
+    "title": "Live at the Roundhouse",
+    "year": 2022,
+    "chartPosition": "16",
+    "type": "live"
+  },
+  {
+    "id": 99,
+    "title": "The Final Sessions",
+    "year": 2023,
+    "chartPosition": "3",
+    "type": "compilation"
+  },
+  {
+    "id": 100,
+    "title": "Legacy",
+    "year": 2024,
+    "chartPosition": "1",
+    "type": "studio"
+  }
+]

@@ -1,0 +1,87 @@
+/* HomePage Styles */
+
+.home-page {
+  min-height: 100vh;
+}
+
+/* Hero Section Animations */
+.home-page .hero-section {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Feature Cards Hover Effects */
+.home-page .feature-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-page .feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Album Card Animations */
+.home-page .album-card {
+  transition: all 0.3s ease;
+}
+
+.home-page .album-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(229, 57, 53, 0.3);
+}
+
+/* Button Animations */
+.home-page button {
+  transition: all 0.2s ease;
+}
+
+.home-page button:hover {
+  transform: translateY(-2px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .home-page .hero-title {
+    font-size: 2rem;
+  }
+  
+  .home-page .hero-subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-page .hero-title {
+    font-size: 1.5rem;
+  }
+}
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home-page .animate-fade-in {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Pulse Animation for Icons */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.home-page .pulse-icon {
+  animation: pulse 2s infinite;
+}
