@@ -4,11 +4,17 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f8fafc;
+  color: #1e293b;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: -0.025em;
 }
 
 code {
@@ -16,7 +22,7 @@ code {
     monospace;
 }
 
-/* Scrollbar Styling */
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -34,19 +40,19 @@ code {
   background: #c62828;
 }
 
-/* Selection Color */
+
 ::selection {
   background-color: #e53935;
   color: white;
 }
 
-/* Focus Styles */
+
 :focus {
   outline: 2px solid #e53935;
   outline-offset: 2px;
 }
 
-/* Remove default button styles */
+
 button {
   border: none;
   background: none;
@@ -54,7 +60,7 @@ button {
   font-family: inherit;
 }
 
-/* Remove default link styles */
+
 a {
   text-decoration: none;
   color: inherit;

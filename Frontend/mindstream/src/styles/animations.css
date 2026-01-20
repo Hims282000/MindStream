@@ -1,6 +1,6 @@
-/* Animation Classes for MindStream Album Collection */
 
-/* Fade Animations */
+
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -87,7 +87,7 @@
   animation: fadeInRight 0.5s ease-out;
 }
 
-/* Slide Animations */
+
 @keyframes slideInUp {
   from {
     transform: translateY(100%);
@@ -192,7 +192,7 @@
   animation: slideOutRight 0.3s ease-out;
 }
 
-/* Scale Animations */
+
 @keyframes scaleIn {
   from {
     opacity: 0;
@@ -276,7 +276,7 @@
   animation: heartbeat 1.5s infinite;
 }
 
-/* Rotate Animations */
+
 @keyframes rotateIn {
   from {
     opacity: 0;
@@ -333,7 +333,7 @@
   animation: spinSlow 3s linear infinite;
 }
 
-/* Bounce Animations */
+
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
@@ -399,7 +399,7 @@
   animation: bounceOut 0.75s;
 }
 
-/* Flip Animations */
+
 @keyframes flipInX {
   from {
     transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
@@ -488,7 +488,7 @@
   animation: flipOutY 0.75s;
 }
 
-/* Zoom Animations */
+
 @keyframes zoomIn {
   from {
     opacity: 0;
@@ -520,7 +520,7 @@
   animation: zoomOut 0.3s ease-out;
 }
 
-/* Shake Animations */
+
 @keyframes shake {
   0%, 100% {
     transform: translateX(0);
@@ -553,7 +553,7 @@
   animation: shakeVertical 0.5s;
 }
 
-/* Wobble Animation */
+
 @keyframes wobble {
   from {
     transform: translate3d(0, 0, 0);
@@ -582,7 +582,7 @@
   animation: wobble 1s;
 }
 
-/* Jello Animation */
+
 @keyframes jello {
   from, 11.1%, to {
     transform: translate3d(0, 0, 0);
@@ -614,7 +614,7 @@
   animation: jello 1s;
 }
 
-/* Rubber Band Animation */
+
 @keyframes rubberBand {
   from {
     transform: scale3d(1, 1, 1);
@@ -643,7 +643,7 @@
   animation: rubberBand 1s;
 }
 
-/* Swing Animation */
+
 @keyframes swing {
   20% {
     transform: rotate3d(0, 0, 1, 15deg);
@@ -667,7 +667,7 @@
   animation: swing 1s;
 }
 
-/* Tada Animation */
+
 @keyframes tada {
   from {
     transform: scale3d(1, 1, 1);
@@ -690,7 +690,7 @@
   animation: tada 1s;
 }
 
-/* Loading Dots Animation */
+
 @keyframes loadingDots {
   0%, 20% {
     color: rgba(0, 0, 0, 0);
@@ -713,7 +713,7 @@
   animation: loadingDots 1.5s infinite;
 }
 
-/* Progress Bar Animation */
+
 @keyframes progressBar {
   from {
     width: 0%;
@@ -727,7 +727,7 @@
   animation: progressBar 2s ease-in-out infinite;
 }
 
-/* Ripple Effect */
+
 @keyframes ripple {
   to {
     transform: scale(4);
@@ -758,7 +758,7 @@
   animation: ripple 1s ease-out;
 }
 
-/* Glow Effect */
+
 @keyframes glow {
   0%, 100% {
     box-shadow: 0 0 5px rgba(229, 57, 53, 0.5);
@@ -772,7 +772,7 @@
   animation: glow 2s infinite;
 }
 
-/* Typewriter Effect */
+
 @keyframes typewriter {
   from {
     width: 0;
@@ -788,7 +788,7 @@
   animation: typewriter 3s steps(40) 1s 1 normal both;
 }
 
-/* Blink Effect */
+
 @keyframes blink {
   0%, 100% {
     opacity: 1;
@@ -802,7 +802,7 @@
   animation: blink 1s infinite;
 }
 
-/* Float Animation */
+
 @keyframes float {
   0%, 100% {
     transform: translateY(0);
@@ -816,7 +816,7 @@
   animation: float 3s ease-in-out infinite;
 }
 
-/* Wave Animation */
+
 @keyframes wave {
   0%, 60%, 100% {
     transform: initial;
@@ -830,7 +830,7 @@
   animation: wave 1.8s infinite;
 }
 
-/* Staggered Children Animations */
+
 .stagger-children > *:nth-child(1) { animation-delay: 0.1s; }
 .stagger-children > *:nth-child(2) { animation-delay: 0.2s; }
 .stagger-children > *:nth-child(3) { animation-delay: 0.3s; }
@@ -842,7 +842,7 @@
 .stagger-children > *:nth-child(9) { animation-delay: 0.9s; }
 .stagger-children > *:nth-child(10) { animation-delay: 1s; }
 
-/* Animation Delays */
+
 .delay-100 { animation-delay: 0.1s; }
 .delay-200 { animation-delay: 0.2s; }
 .delay-300 { animation-delay: 0.3s; }
@@ -854,7 +854,7 @@
 .delay-900 { animation-delay: 0.9s; }
 .delay-1000 { animation-delay: 1s; }
 
-/* Animation Durations */
+
 .duration-100 { animation-duration: 0.1s; }
 .duration-200 { animation-duration: 0.2s; }
 .duration-300 { animation-duration: 0.3s; }
@@ -866,19 +866,19 @@
 .duration-900 { animation-duration: 0.9s; }
 .duration-1000 { animation-duration: 1s; }
 
-/* Animation Fill Modes */
+
 .fill-none { animation-fill-mode: none; }
 .fill-forwards { animation-fill-mode: forwards; }
 .fill-backwards { animation-fill-mode: backwards; }
 .fill-both { animation-fill-mode: both; }
 
-/* Animation Timing Functions */
+
 .ease-linear { animation-timing-function: linear; }
 .ease-in { animation-timing-function: ease-in; }
 .ease-out { animation-timing-function: ease-out; }
 .ease-in-out { animation-timing-function: ease-in-out; }
 
-/* Hover Animations */
+
 .hover-lift:hover {
   transform: translateY(-4px);
   transition: transform 0.3s ease;
@@ -899,7 +899,7 @@
   transition: box-shadow 0.3s ease;
 }
 
-/* Reduced Motion Support */
+
 @media (prefers-reduced-motion: reduce) {
   .fade-in,
   .fade-out,

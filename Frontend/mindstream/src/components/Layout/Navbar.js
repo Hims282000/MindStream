@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import {
   AppBar,
@@ -9,13 +9,12 @@ import {
   Menu,
   MenuItem,
   Box,
-  Avatar,
   Container,
   InputBase,
   alpha,
   styled,
-  Badge,
-  Tooltip
+  Tooltip,
+  useTheme
 } from '@mui/material';
 import {
   Search as SearchIcon,
@@ -26,16 +25,19 @@ import {
   Login as LoginIcon,
   Logout as LogoutIcon,
   Menu as MenuIcon,
-  MusicNote as MusicNoteIcon
+  MusicNote as MusicNoteIcon,
+  Brightness4 as Brightness4Icon,
+  Brightness7 as Brightness7Icon
 } from '@mui/icons-material';
 import { useAuth } from '../../context/AuthContext';
+import { ColorModeContext } from '../../App';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
   borderRadius: theme.shape.borderRadius,
-  backgroundColor: alpha(theme.palette.common.white, 0.15),
+  backgroundColor: alpha(theme.palette.mode === 'light' ? theme.palette.common.white : theme.palette.common.black, 0.15),
   '&:hover': {
-    backgroundColor: alpha(theme.palette.common.white, 0.25),
+    backgroundColor: alpha(theme.palette.mode === 'light' ? theme.palette.common.white : theme.palette.common.black, 0.25),
   },
   marginRight: theme.spacing(2),
   marginLeft: 0,
@@ -57,12 +59,30 @@ const SearchIconWrapper = styled('div')(({ theme }) => ({
 }));
 
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
-  color: 'inherit',
+  color: theme.palette.mode === 'light' ? '#1e293b' : '#ffffff',
+  width: '100%',
   '& .MuiInputBase-input': {
     padding: theme.spacing(1, 1, 1, 0),
     paddingLeft: `calc(1em + ${theme.spacing(4)})`,
     transition: theme.transitions.create('width'),
     width: '100%',
+    color: theme.palette.mode === 'light' ? '#1e293b !important' : '#ffffff !important',
+    '&::-webkit-input-placeholder': {
+      color: theme.palette.mode === 'light' ? '#64748b' : '#e2e8f0',
+      opacity: 1,
+    },
+    '&::-moz-placeholder': {
+      color: theme.palette.mode === 'light' ? '#64748b' : '#e2e8f0',
+      opacity: 1,
+    },
+    '&:-ms-input-placeholder': {
+      color: theme.palette.mode === 'light' ? '#64748b' : '#e2e8f0',
+      opacity: 1,
+    },
+    '&::placeholder': {
+      color: theme.palette.mode === 'light' ? '#64748b' : '#e2e8f0',
+      opacity: 1,
+    },
     [theme.breakpoints.up('md')]: {
       width: '20ch',
     },
@@ -72,6 +92,8 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 const Navbar = () => {
   const { user, logout, isAuthenticated } = useAuth();
   const navigate = useNavigate();
+  const theme = useTheme();
+  const colorMode = useContext(ColorModeContext);
   const [anchorEl, setAnchorEl] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -97,11 +119,11 @@ const Navbar = () => {
   };
 
   return (
-    <AppBar position="sticky" sx={{ background: 'linear-gradient(45deg, #e53935 30%, #ab000d 90%)' }}>
+    <AppBar position="sticky">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          {/* Logo/Brand */}
-          <MusicNoteIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+
+          <MusicNoteIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, color: 'primary.main' }} />
           <Typography
             variant="h6"
             noWrap
@@ -110,20 +132,21 @@ const Navbar = () => {
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
+              fontFamily: 'Poppins',
               fontWeight: 700,
-              letterSpacing: '.2rem',
-              color: 'inherit',
+              letterSpacing: '.1rem',
+              color: 'text.primary',
               textDecoration: 'none',
               '&:hover': {
-                opacity: 0.8
+                color: 'primary.main',
+                transition: 'color 0.2s'
               }
             }}
           >
             MINDSTREAM
           </Typography>
 
-          {/* Mobile Menu Icon */}
+
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -138,15 +161,9 @@ const Navbar = () => {
             <Menu
               id="menu-appbar"
               anchorEl={anchorEl}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
-              }}
+              anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
               keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
-              }}
+              transformOrigin={{ vertical: 'top', horizontal: 'left' }}
               open={Boolean(anchorEl)}
               onClose={handleClose}
               sx={{ display: { xs: 'block', md: 'none' } }}
@@ -165,8 +182,8 @@ const Navbar = () => {
             </Menu>
           </Box>
 
-          {/* Mobile Logo */}
-          <MusicNoteIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+
+          <MusicNoteIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1, color: 'primary.main' }} />
           <Typography
             variant="h5"
             noWrap
@@ -176,22 +193,22 @@ const Navbar = () => {
               mr: 2,
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
-              fontFamily: 'monospace',
+              fontFamily: 'Poppins',
               fontWeight: 700,
-              letterSpacing: '.2rem',
-              color: 'inherit',
+              letterSpacing: '.1rem',
+              color: 'text.primary',
               textDecoration: 'none',
             }}
           >
             MS
           </Typography>
 
-          {/* Desktop Navigation */}
+
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, ml: 3 }}>
             <Button
               component={Link}
               to="/"
-              sx={{ my: 2, color: 'white', display: 'flex', alignItems: 'center' }}
+              sx={{ my: 2, color: 'text.secondary', display: 'flex', alignItems: 'center', '&:hover': { color: 'primary.main', background: 'transparent' } }}
               startIcon={<HomeIcon />}
             >
               Home
@@ -199,7 +216,7 @@ const Navbar = () => {
             <Button
               component={Link}
               to="/albums"
-              sx={{ my: 2, color: 'white', display: 'flex', alignItems: 'center' }}
+              sx={{ my: 2, color: 'text.secondary', display: 'flex', alignItems: 'center', '&:hover': { color: 'primary.main', background: 'transparent' } }}
               startIcon={<AlbumIcon />}
             >
               Albums
@@ -208,7 +225,7 @@ const Navbar = () => {
               <Button
                 component={Link}
                 to="/favorites"
-                sx={{ my: 2, color: 'white', display: 'flex', alignItems: 'center' }}
+                sx={{ my: 2, color: 'text.secondary', display: 'flex', alignItems: 'center', '&:hover': { color: 'primary.main', background: 'transparent' } }}
                 startIcon={<FavoriteIcon />}
               >
                 Favorites
@@ -216,10 +233,10 @@ const Navbar = () => {
             )}
           </Box>
 
-          {/* Search Bar */}
-          <Search>
+
+          <Search sx={{ backgroundColor: alpha(theme.palette.mode === 'light' ? 'rgba(0,0,0,0.04)' : 'rgba(255,255,255,0.05)', 1), '&:hover': { backgroundColor: alpha(theme.palette.mode === 'light' ? 'rgba(0,0,0,0.08)' : 'rgba(255,255,255,0.1)', 1) } }}>
             <SearchIconWrapper>
-              <SearchIcon />
+              <SearchIcon color="action" />
             </SearchIconWrapper>
             <StyledInputBase
               placeholder="Search albums…"
@@ -230,20 +247,24 @@ const Navbar = () => {
             />
           </Search>
 
-          {/* User Actions */}
-          <Box sx={{ flexGrow: 0, display: 'flex', alignItems: 'center', gap: 1 }}>
+          <IconButton sx={{ ml: 1 }} onClick={colorMode.toggleColorMode} color="inherit">
+            {theme.palette.mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon sx={{ color: 'text.secondary' }} />}
+          </IconButton>
+
+
+          <Box sx={{ flexGrow: 0, display: 'flex', alignItems: 'center', gap: 1, ml: 1 }}>
             {isAuthenticated ? (
               <>
                 <Tooltip title="Dashboard">
-                  <IconButton component={Link} to="/dashboard" sx={{ color: 'white' }}>
+                  <IconButton component={Link} to="/dashboard" color="primary">
                     <PersonIcon />
                   </IconButton>
                 </Tooltip>
-                <Typography variant="body2" sx={{ display: { xs: 'none', sm: 'block' } }}>
+                <Typography variant="body2" sx={{ display: { xs: 'none', sm: 'block' }, color: 'text.primary', fontWeight: 600 }}>
                   Hi, {user?.username}
                 </Typography>
                 <Tooltip title="Logout">
-                  <IconButton onClick={handleLogout} sx={{ color: 'white' }}>
+                  <IconButton onClick={handleLogout} sx={{ color: 'text.secondary', '&:hover': { color: 'error.main' } }}>
                     <LogoutIcon />
                   </IconButton>
                 </Tooltip>
@@ -253,14 +274,10 @@ const Navbar = () => {
                 <Button
                   component={Link}
                   to="/login"
-                  variant="outlined"
+                  variant="text"
                   sx={{ 
-                    color: 'white', 
-                    borderColor: 'white',
-                    '&:hover': {
-                      backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                      borderColor: 'white'
-                    }
+                    color: 'text.primary',
+                    '&:hover': { color: 'primary.main', background: 'transparent' }
                   }}
                   startIcon={<LoginIcon />}
                 >
@@ -270,13 +287,10 @@ const Navbar = () => {
                   component={Link}
                   to="/register"
                   variant="contained"
+                  color="primary"
                   sx={{ 
                     ml: 1,
-                    backgroundColor: 'white',
-                    color: '#e53935',
-                    '&:hover': {
-                      backgroundColor: '#f5f5f5'
-                    }
+                    boxShadow: '0 4px 14px 0 rgba(225, 29, 72, 0.39)',
                   }}
                 >
                   Register

@@ -1,6 +1,6 @@
-/* Responsive Design for MindStream Album Collection */
 
-/* Base responsive container */
+
+
 .container-responsive {
   width: 100%;
   margin: 0 auto;
@@ -35,7 +35,7 @@
   }
 }
 
-/* Responsive Grid System */
+
 .grid-responsive {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -66,7 +66,7 @@
   }
 }
 
-/* Responsive Typography */
+
 .text-responsive {
   font-size: 1rem;
   line-height: 1.5;
@@ -90,7 +90,7 @@
   }
 }
 
-/* Responsive Spacing */
+
 .p-responsive {
   padding: 1rem;
 }
@@ -107,7 +107,7 @@
   }
 }
 
-/* Responsive Navigation */
+
 .nav-responsive {
   flex-direction: column;
   align-items: flex-start;
@@ -120,7 +120,7 @@
   }
 }
 
-/* Responsive Card Layout */
+
 .card-responsive {
   display: flex;
   flex-direction: column;
@@ -136,7 +136,7 @@
   }
 }
 
-/* Responsive Images */
+
 .img-responsive {
   width: 100%;
   height: auto;
@@ -161,7 +161,7 @@
   }
 }
 
-/* Responsive Tables */
+
 .table-responsive {
   width: 100%;
   overflow-x: auto;
@@ -172,7 +172,7 @@
   min-width: 600px;
 }
 
-/* Responsive Forms */
+
 .form-responsive {
   display: flex;
   flex-direction: column;
@@ -197,7 +197,7 @@
   }
 }
 
-/* Responsive Buttons */
+
 .btn-responsive {
   width: 100%;
 }
@@ -208,7 +208,7 @@
   }
 }
 
-/* Responsive Modal/Dialog */
+
 .modal-responsive {
   width: 95%;
   max-width: 95%;
@@ -230,7 +230,7 @@
   }
 }
 
-/* Responsive Sidebar Layout */
+
 .layout-sidebar-responsive {
   display: flex;
   flex-direction: column;
@@ -252,7 +252,7 @@
   }
 }
 
-/* Responsive Hero Section */
+
 .hero-responsive {
   padding: 3rem 1rem;
   text-align: center;
@@ -271,7 +271,7 @@
   }
 }
 
-/* Responsive Footer */
+
 .footer-responsive {
   display: flex;
   flex-direction: column;
@@ -293,7 +293,7 @@
   }
 }
 
-/* Responsive Masonry Grid */
+
 .masonry-responsive {
   columns: 1;
   column-gap: 1.5rem;
@@ -317,11 +317,11 @@
   }
 }
 
-/* Responsive Aspect Ratios */
+
 .aspect-ratio-responsive {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  padding-bottom: 56.25%; 
 }
 
 .aspect-ratio-responsive > * {
@@ -333,7 +333,7 @@
   object-fit: cover;
 }
 
-/* Responsive Visibility */
+
 .visible-mobile {
   display: block;
 }
@@ -366,7 +366,7 @@
   }
 }
 
-/* Responsive Hidden */
+
 .hidden-mobile {
   display: none;
 }
@@ -399,7 +399,7 @@
   }
 }
 
-/* Responsive Text Alignment */
+
 .text-center-mobile {
   text-align: center;
 }
@@ -414,7 +414,7 @@
   }
 }
 
-/* Responsive Margins */
+
 .margin-responsive {
   margin: 1rem 0;
 }
@@ -425,7 +425,7 @@
   }
 }
 
-/* Responsive Flex Order */
+
 .order-first-mobile {
   order: -1;
 }
@@ -444,7 +444,7 @@
   }
 }
 
-/* Responsive Gap */
+
 .gap-responsive {
   gap: 1rem;
 }
@@ -461,7 +461,7 @@
   }
 }
 
-/* Responsive Border Radius */
+
 .rounded-responsive {
   border-radius: 0.5rem;
 }
@@ -472,7 +472,7 @@
   }
 }
 
-/* Responsive Shadows */
+
 .shadow-responsive {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -483,7 +483,7 @@
   }
 }
 
-/* Responsive Animation Speeds */
+
 .animation-responsive {
   transition-duration: 300ms;
 }
@@ -494,7 +494,7 @@
   }
 }
 
-/* Responsive Loading States */
+
 .loading-responsive {
   padding: 2rem;
 }
@@ -505,7 +505,7 @@
   }
 }
 
-/* Responsive Empty States */
+
 .empty-state-responsive {
   padding: 3rem 1rem;
   text-align: center;
@@ -517,7 +517,7 @@
   }
 }
 
-/* Responsive Error States */
+
 .error-state-responsive {
   padding: 2rem 1rem;
 }
@@ -528,7 +528,7 @@
   }
 }
 
-/* Responsive Success States */
+
 .success-state-responsive {
   padding: 2rem 1rem;
 }
@@ -539,7 +539,7 @@
   }
 }
 
-/* Print Styles */
+
 @media print {
   .no-print {
     display: none !important;
@@ -586,7 +586,7 @@
   }
 }
 
-/* High Contrast Mode */
+
 @media (prefers-contrast: high) {
   :root {
     --color-primary: #b71c1c;
@@ -604,7 +604,7 @@
   }
 }
 
-/* Reduced Motion */
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -616,7 +616,7 @@
   }
 }
 
-/* Touch Device Optimizations */
+
 @media (hover: none) and (pointer: coarse) {
   .btn,
   .clickable {
@@ -627,11 +627,11 @@
   input,
   select,
   textarea {
-    font-size: 16px; /* Prevents iOS zoom on focus */
+    font-size: 16px; 
   }
 }
 
-/* Very Large Screens */
+
 @media (min-width: 1920px) {
   .container-responsive {
     max-width: 1600px;
@@ -642,7 +642,7 @@
   }
 }
 
-/* Very Small Screens */
+
 @media (max-width: 360px) {
   .container-responsive {
     padding: 0 0.75rem;

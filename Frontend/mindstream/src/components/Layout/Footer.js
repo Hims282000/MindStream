@@ -8,7 +8,8 @@ import {
   Link as MuiLink,
   IconButton,
   Divider,
-  Stack
+  Stack,
+  useTheme
 } from '@mui/material';
 import {
   GitHub as GitHubIcon,
@@ -22,52 +23,72 @@ import {
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const theme = useTheme();
 
   return (
     <Box
       component="footer"
       sx={{
         mt: 'auto',
-        py: 6,
-        backgroundColor: '#212121',
-        color: 'white'
+        py: 8,
+        background: theme.palette.mode === 'light' 
+          ? `linear-gradient(to top, #020617 0%, #0f172a 100%)`
+          : `linear-gradient(to top, #020617 0%, #1e293b 100%)`,
+        color: 'white',
+        borderTop: '1px solid rgba(255,255,255,0.05)'
       }}
     >
       <Container maxWidth="lg">
-        <Grid container spacing={4}>
+        <Grid container spacing={6}>
           <Grid item xs={12} sm={6} md={3}>
-            <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
-              <MusicNoteIcon sx={{ mr: 1, color: '#e53935' }} />
-              <Typography variant="h6" component="div">
+            <Box sx={{ display: 'flex', alignItems: 'center', mb: 3 }}>
+              <MusicNoteIcon sx={{ mr: 1, color: 'primary.main', fontSize: 32 }} />
+              <Typography variant="h6" component="div" sx={{ fontWeight: 700, letterSpacing: '0.05em' }}>
                 MINDSTREAM
               </Typography>
             </Box>
-            <Typography variant="body2" sx={{ mb: 2, opacity: 0.8 }}>
+            <Typography variant="body2" sx={{ mb: 3, opacity: 0.7, lineHeight: 1.8 }}>
               The ultimate collection for MindStream fans. 
               Track albums, chart positions, and build your personal collection.
             </Typography>
             <Stack direction="row" spacing={1}>
               <IconButton
                 size="small"
-                sx={{ color: 'white', '&:hover': { color: '#e53935' } }}
+                sx={{ 
+                  color: 'white', 
+                  bgcolor: 'rgba(255,255,255,0.05)',
+                  '&:hover': { bgcolor: 'primary.main', color: 'white' } 
+                }}
               >
                 <GitHubIcon fontSize="small" />
               </IconButton>
               <IconButton
                 size="small"
-                sx={{ color: 'white', '&:hover': { color: '#e53935' } }}
+                sx={{ 
+                  color: 'white', 
+                  bgcolor: 'rgba(255,255,255,0.05)',
+                  '&:hover': { bgcolor: 'primary.main', color: 'white' } 
+                }}
               >
                 <TwitterIcon fontSize="small" />
               </IconButton>
               <IconButton
                 size="small"
-                sx={{ color: 'white', '&:hover': { color: '#e53935' } }}
+                sx={{ 
+                  color: 'white', 
+                  bgcolor: 'rgba(255,255,255,0.05)',
+                  '&:hover': { bgcolor: 'primary.main', color: 'white' } 
+                }}
               >
                 <FacebookIcon fontSize="small" />
               </IconButton>
               <IconButton
                 size="small"
-                sx={{ color: 'white', '&:hover': { color: '#e53935' } }}
+                sx={{ 
+                  color: 'white', 
+                  bgcolor: 'rgba(255,255,255,0.05)',
+                  '&:hover': { bgcolor: 'primary.main', color: 'white' } 
+                }}
               >
                 <InstagramIcon fontSize="small" />
               </IconButton>

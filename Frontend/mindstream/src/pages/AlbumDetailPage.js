@@ -90,7 +90,7 @@ const AlbumDetailPage = () => {
   };
 
   const loadSimilarAlbums = (albums, currentIndex) => {
-    // Get albums from same year or nearby years
+
     const currentAlbum = albums[currentIndex];
     const similar = albums
       .filter((a, index) => index !== currentIndex && Math.abs(a.year - currentAlbum.year) <= 2)
@@ -204,7 +204,7 @@ const AlbumDetailPage = () => {
 
   return (
     <Container maxWidth="lg" sx={{ py: 4 }}>
-      {/* Breadcrumbs */}
+
       <Breadcrumbs aria-label="breadcrumb" sx={{ mb: 3 }}>
         <Button
           component={Link}
@@ -225,7 +225,7 @@ const AlbumDetailPage = () => {
         <Typography color="text.primary">{album.album}</Typography>
       </Breadcrumbs>
 
-      {/* Album Header */}
+
       <Paper elevation={3} sx={{ p: 4, mb: 4 }}>
         <Grid container spacing={4}>
           <Grid item xs={12} md={4}>
@@ -352,7 +352,7 @@ const AlbumDetailPage = () => {
         </Grid>
       </Paper>
 
-      {/* Navigation */}
+
       <Paper elevation={2} sx={{ p: 2, mb: 4 }}>
         <Grid container alignItems="center" justifyContent="space-between">
           <Grid item>
@@ -394,7 +394,7 @@ const AlbumDetailPage = () => {
         </Grid>
       </Paper>
 
-      {/* Similar Albums */}
+
       {similarAlbums.length > 0 && (
         <Box sx={{ mb: 4 }}>
           <Typography variant="h5" gutterBottom sx={{ mb: 3 }}>
@@ -438,7 +438,7 @@ const AlbumDetailPage = () => {
         </Box>
       )}
 
-      {/* Album Info */}
+
       <Paper elevation={2} sx={{ p: 4 }}>
         <Typography variant="h5" gutterBottom>
           About This Album

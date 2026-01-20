@@ -1,7 +1,7 @@
-/* CSS Custom Properties for MindStream Album Collection */
+
 
 :root {
-  /* Primary Colors - Red Theme */
+  
   --color-primary-50: #ffebee;
   --color-primary-100: #ffcdd2;
   --color-primary-200: #ef9a9a;
@@ -17,7 +17,7 @@
   --color-primary-light: var(--color-primary-400);
   --color-primary-dark: var(--color-primary-800);
   
-  /* Secondary Colors - Black Theme */
+  
   --color-secondary-50: #fafafa;
   --color-secondary-100: #f5f5f5;
   --color-secondary-200: #eeeeee;
@@ -33,7 +33,7 @@
   --color-secondary-light: var(--color-secondary-700);
   --color-secondary-dark: #000000;
   
-  /* Accent Colors */
+ 
   --color-accent-red: #e53935;
   --color-accent-pink: #ff4081;
   --color-accent-orange: #ff9800;
@@ -43,7 +43,7 @@
   --color-accent-blue: #2196f3;
   --color-accent-purple: #9c27b0;
   
-  /* Status Colors */
+ 
   --color-success: #4caf50;
   --color-success-light: #80e27e;
   --color-success-dark: #087f23;
@@ -60,12 +60,12 @@
   --color-info-light: #6ec6ff;
   --color-info-dark: #0069c0;
   
-  /* Favorite Color */
+
   --color-favorite: #ff4081;
   --color-favorite-light: #ff79b0;
   --color-favorite-dark: #c60055;
   
-  /* Neutral Colors */
+  
   --color-white: #ffffff;
   --color-black: #000000;
   --color-transparent: transparent;
@@ -81,13 +81,13 @@
   --color-gray-800: #424242;
   --color-gray-900: #212121;
   
-  /* Background Colors */
+
   --color-background: #f5f5f5;
   --color-background-paper: #ffffff;
   --color-background-dark: #212121;
   --color-background-light: #ffffff;
   
-  /* Text Colors */
+
   --color-text-primary: rgba(0, 0, 0, 0.87);
   --color-text-secondary: rgba(0, 0, 0, 0.6);
   --color-text-disabled: rgba(0, 0, 0, 0.38);
@@ -98,17 +98,17 @@
   --color-text-disabled-dark: rgba(255, 255, 255, 0.38);
   --color-text-hint-dark: rgba(255, 255, 255, 0.38);
   
-  /* Border Colors */
+  
   --color-border-light: #e0e0e0;
   --color-border: #bdbdbd;
   --color-border-dark: #757575;
   
-  /* Shadow Colors */
+  
   --color-shadow-light: rgba(0, 0, 0, 0.12);
   --color-shadow: rgba(0, 0, 0, 0.24);
   --color-shadow-dark: rgba(0, 0, 0, 0.4);
   
-  /* Gradients */
+  
   --gradient-primary: linear-gradient(135deg, #e53935 0%, #ab000d 100%);
   --gradient-secondary: linear-gradient(135deg, #212121 0%, #000000 100%);
   --gradient-favorite: linear-gradient(135deg, #ff4081 0%, #c60055 100%);
@@ -117,19 +117,19 @@
   --gradient-error: linear-gradient(135deg, #f44336 0%, #ba000d 100%);
   --gradient-info: linear-gradient(135deg, #2196f3 0%, #0069c0 100%);
   
-  /* Typography */
+
   --font-family-sans: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   --font-family-serif: 'Georgia', 'Times New Roman', serif;
   --font-family-mono: 'Roboto Mono', 'Courier New', monospace;
   
-  --font-size-xs: 0.75rem;   /* 12px */
-  --font-size-sm: 0.875rem;  /* 14px */
-  --font-size-md: 1rem;      /* 16px */
-  --font-size-lg: 1.125rem;  /* 18px */
-  --font-size-xl: 1.25rem;   /* 20px */
-  --font-size-xxl: 1.5rem;   /* 24px */
-  --font-size-xxxl: 2rem;    /* 32px */
-  --font-size-display: 3rem; /* 48px */
+  --font-size-xs: 0.75rem;   
+  --font-size-sm: 0.875rem;  
+  --font-size-md: 1rem;      
+  --font-size-lg: 1.125rem;  
+  --font-size-xl: 1.25rem;   
+  --font-size-xxl: 1.5rem;   
+  --font-size-xxxl: 2rem;    
+  --font-size-display: 3rem; 
   
   --font-weight-light: 300;
   --font-weight-regular: 400;
@@ -145,32 +145,32 @@
   --letter-spacing-normal: 0;
   --letter-spacing-wide: 0.025em;
   
-  /* Spacing Scale */
-  --space-1: 0.25rem;   /* 4px */
-  --space-2: 0.5rem;    /* 8px */
-  --space-3: 0.75rem;   /* 12px */
-  --space-4: 1rem;      /* 16px */
-  --space-5: 1.25rem;   /* 20px */
-  --space-6: 1.5rem;    /* 24px */
-  --space-8: 2rem;      /* 32px */
-  --space-10: 2.5rem;   /* 40px */
-  --space-12: 3rem;     /* 48px */
-  --space-16: 4rem;     /* 64px */
-  --space-20: 5rem;     /* 80px */
-  --space-24: 6rem;     /* 96px */
-  --space-32: 8rem;     /* 128px */
   
-  /* Border Radius */
+  --space-1: 0.25rem;   
+  --space-2: 0.5rem;    
+  --space-3: 0.75rem;   
+  --space-4: 1rem;      
+  --space-5: 1.25rem;   
+  --space-6: 1.5rem;    
+  --space-8: 2rem;      
+  --space-10: 2.5rem;   
+  --space-12: 3rem;     
+  --space-16: 4rem;
+  --space-20: 5rem;     
+  --space-24: 6rem;     
+  --space-32: 8rem;     
+  
+  
   --radius-none: 0;
-  --radius-sm: 0.125rem;  /* 2px */
-  --radius-md: 0.25rem;   /* 4px */
-  --radius-lg: 0.5rem;    /* 8px */
-  --radius-xl: 0.75rem;   /* 12px */
-  --radius-2xl: 1rem;     /* 16px */
-  --radius-3xl: 1.5rem;   /* 24px */
+  --radius-sm: 0.125rem;  
+  --radius-md: 0.25rem;   
+  --radius-lg: 0.5rem;    
+  --radius-xl: 0.75rem;   
+  --radius-2xl: 1rem;     
+  --radius-3xl: 1.5rem;   
   --radius-full: 9999px;
   
-  /* Shadows */
+  
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
@@ -178,13 +178,13 @@
   --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
   
-  /* Transitions */
+  
   --transition-fast: 150ms ease;
   --transition-normal: 300ms ease;
   --transition-slow: 500ms ease;
   --transition-bounce: 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
   
-  /* Z-Index Scale */
+  
   --z-index-dropdown: 1000;
   --z-index-sticky: 1020;
   --z-index-fixed: 1030;
@@ -194,25 +194,25 @@
   --z-index-tooltip: 1070;
   --z-index-toast: 1080;
   
-  /* Breakpoints */
+  
   --breakpoint-sm: 640px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 1024px;
   --breakpoint-xl: 1280px;
   --breakpoint-2xl: 1536px;
   
-  /* Container Widths */
+  
   --container-sm: 640px;
   --container-md: 768px;
   --container-lg: 1024px;
   --container-xl: 1280px;
   --container-2xl: 1536px;
   
-  /* Grid Columns */
+  
   --grid-columns: 12;
   --grid-gap: 1rem;
   
-  /* Animation Durations */
+  
   --duration-75: 75ms;
   --duration-100: 100ms;
   --duration-150: 150ms;
@@ -222,7 +222,7 @@
   --duration-700: 700ms;
   --duration-1000: 1000ms;
   
-  /* Animation Delays */
+  
   --delay-75: 75ms;
   --delay-100: 100ms;
   --delay-150: 150ms;
@@ -232,7 +232,7 @@
   --delay-700: 700ms;
   --delay-1000: 1000ms;
   
-  /* Opacity */
+  
   --opacity-0: 0;
   --opacity-5: 0.05;
   --opacity-10: 0.1;
@@ -250,7 +250,7 @@
   --opacity-100: 1;
 }
 
-/* Dark Theme Variables */
+
 @media (prefers-color-scheme: dark) {
   :root {
     --color-background: #121212;
@@ -271,7 +271,7 @@
   }
 }
 
-/* Print Styles */
+
 @media print {
   :root {
     --color-background: white;
