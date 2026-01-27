@@ -1,11 +1,11 @@
-package com.example.mindStreamApplication.AI.MCP.Rules;
+package com.example.mindStreamApplication.AI.MCP.Processors;
 
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.example.mindStreamApplication.AI.MCP.Processors.QwenOutputParser;
+
 
 
 @SpringBootTest

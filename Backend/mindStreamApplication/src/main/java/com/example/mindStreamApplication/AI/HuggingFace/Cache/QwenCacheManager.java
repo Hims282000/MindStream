@@ -11,8 +11,8 @@ public class QwenCacheManager {
 
     private final ConcurrentHashMap<String, CacheEntry> cache= new ConcurrentHashMap<>();
     private final long TTL= TimeUnit.MINUTES.toMillis(30);
-    private void put(String key, Object value){
-        cache.put( key, new CacheEntry(System.currentTimeMillis()));
+    public void put(String key, Object value){
+        cache.put(key, new CacheEntry(value, System.currentTimeMillis()));
     }
 
     public Object get(String key){
@@ -30,7 +30,7 @@ public class QwenCacheManager {
         cache.remove(key);
     }
     
-    public void clear(String key){
+    public void clear(){
         cache.clear();
     }
 

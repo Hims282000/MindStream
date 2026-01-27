@@ -48,11 +48,14 @@ public class QwenOutputParser {
 
 
     public String extractJSONFromCode(String codeOutput){
-        int start= codeOutput.indexOf('{');
-        int end= codeOutput.lastIndexOf('}');
-        if (start>=0 && end>start) {
-            return codeOutput.substring(start, end-1);
-            
+        if (codeOutput == null) {
+            return "{}";
+        }
+        
+        int start = codeOutput.indexOf('{');
+        int end = codeOutput.lastIndexOf('}');
+        if (start >= 0 && end > start && end < codeOutput.length()) {
+            return codeOutput.substring(start, end + 1);
         }
         return "{}";
     }

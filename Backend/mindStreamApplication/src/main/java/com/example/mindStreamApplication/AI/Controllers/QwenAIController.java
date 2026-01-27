@@ -30,13 +30,16 @@ public class QwenAIController {
                 request.getDescription())
             .map(summary -> ResponseEntity.ok(new SummaryResponse(summary)))
             .onErrorResume(e -> Mono.just(
-                ResponseEntity.badRequest().body(new ErrorResponse(e.getMessage()));
+                ResponseEntity.badRequest().body(new ErrorResponse(e.getMessage()))));
     }
     
     @PostMapping("/voice-search")
     public Mono<ResponseEntity<?>> voiceSearch(
             @RequestBody VoiceSearchRequest request) {
-        return qwenSearchService.parseVoiceQuery(request.getQuery()).map(json -> ResponseEntity.ok(json)).onErrorResume(e -> Mono.just(ResponseEntity.badRequest().body(new ErrorResponse(e.getMessage()));
+        return qwenSearchService.parseVoiceQuery(request.getQuery())
+            .map(json -> ResponseEntity.ok(json))
+            .onErrorResume(e -> Mono.just(
+                ResponseEntity.badRequest().body(new ErrorResponse(e.getMessage())));
     }
 
     public static class SummaryRequest{

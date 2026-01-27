@@ -1,8 +1,1 @@
-package com.example.mindStreamApplication.AI.MCP.Rules;
-
-import org.springframework.boot.test.context.SpringBootTest;
-
-@SpringBootTest
-public class QwenOutputParserTest {
-    
-}
+// This file is intentionally empty - see the actual test in MCP/Processors/QwenOutputParserTest.java
